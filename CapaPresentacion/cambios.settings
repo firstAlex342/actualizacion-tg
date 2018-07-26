@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CapaPresentacion" GeneratedClassName="cambios">
+  <Profiles />
+  <Settings>
+    <Setting Name="dato1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">primero</Value>
+    </Setting>
+    <Setting Name="ClaveProducto" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FechaVencimiento" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TituloTicket" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ESTO VA A SER UN TITULO LARGO PARA VER QUE PASA</Value>
+    </Setting>
+    <Setting Name="Linea1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NO NEGOCIABLE</Value>
+    </Setting>
+    <Setting Name="Linea2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NO REEMBOLSABLE</Value>
+    </Setting>
+    <Setting Name="Linea3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">NO RECLAMABLE</Value>
+    </Setting>
+    <Setting Name="Correo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">pablodelhip@gmail.com</Value>
+    </Setting>
+    <Setting Name="NumeroMensajesSMS" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

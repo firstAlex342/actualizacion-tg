@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0DE7F6C9-13FE-45C6-A670-12FD6A507C01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaLogicaNegocios</RootNamespace>
+    <AssemblyName>CapaLogicaNegocios</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClsCatProductos.cs" />
+    <Compile Include="ClsClvMembresias.cs" />
+    <Compile Include="ClsCorteCaja.cs" />
+    <Compile Include="ClsCrearTicket.cs" />
+    <Compile Include="ClsGeneral.cs" />
+    <Compile Include="ClsHdrVentaHist.cs" />
+    <Compile Include="ClsHistorialObservaciones.cs" />
+    <Compile Include="ClsIngresarRetirar.cs" />
+    <Compile Include="ClsInstructores.cs" />
+    <Compile Include="ClsLockers.cs" />
+    <Compile Include="ClsLogin.cs" />
+    <Compile Include="ClsMembresias.cs" />
+    <Compile Include="ClsMovCortesCaja.cs" />
+    <Compile Include="ClsMovimientoCaja.cs" />
+    <Compile Include="ClsMovVentasHist.cs" />
+    <Compile Include="ClsMovVisitas.cs" />
+    <Compile Include="ClsObservaciones.cs" />
+    <Compile Include="ClsObservacionesCaja.cs" />
+    <Compile Include="ClsProductos.cs" />
+    <Compile Include="ClsRegistroEntradas.cs" />
+    <Compile Include="ClsSerial.cs" />
+    <Compile Include="ClsSocios.cs" />
+    <Compile Include="ClsTextoEmail.cs" />
+    <Compile Include="ClsUsuario.cs" />
+    <Compile Include="ClsVentas.cs" />
+    <Compile Include="Datatable.cs" />
+    <Compile Include="Login.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaAccesoDatos\CapaAccesoDatos.csproj">
+      <Project>{2e090f49-92b2-4125-88de-d0d92f14e50a}</Project>
+      <Name>CapaAccesoDatos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
